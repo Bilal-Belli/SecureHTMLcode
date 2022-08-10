@@ -20,19 +20,20 @@
         </div>
     </nav>
 </header>
-<body background="./bg.png" style="background-size: cover;overflow: hidden;">
+<!-- overflow: hidden; -->
+<body background="./bg.png" style="background-size: cover;">
     <div class="container py-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-md-8">
             <div class="card bg-secondary text-white" style="border-radius: 0.5rem;">
                 <div class="card-body text-center">
                 <label class="form-label" for="textAreaExample" id="labelCodeType">HTML Code</label>
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white mb-4 firstOPdiv">
                     <textarea class="form-control" id="htmlCode" oninput="encryptHTML()" rows="6"></textarea>
                 </div>
                 <label class="form-label" for="textAreaExample" id="labelResult">Result (Encoded HTML)</label>
-                <div class="form-outline form-white">
-                    <textarea class="form-control" id="resultOfFunction" rows="6"></textarea>
+                <div class="form-outline form-white secondOPdiv">
+                    <textarea class="form-control" id="resultOfFunction" readonly rows="6"></textarea>
                 </div>
                 </div>
             </div>
