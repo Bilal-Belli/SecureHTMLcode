@@ -1,9 +1,9 @@
 let NormalCode = '';
 let resultHexEncoded = '';
 
-function encryptHTML(){
-    NormalCode = '';
-    NormalHTMLCode = document.getElementById("htmlCode").value;
+function basicEncriptionHTML(NormalHTMLCode){
+    // NormalCode = '';
+    // NormalHTMLCode = document.getElementById("htmlCode").value;
     resultHexEncoded = '';
     resultHexEncoded += '<script language="javascript">document.write(unescape(\'';
     for (var i = 0; i < NormalHTMLCode.length; i++) {
@@ -11,17 +11,39 @@ function encryptHTML(){
     }
     resultHexEncoded += '\'));</script>';
     resultHexEncoded = resultHexEncoded.replace(/\%\a/g,''); //remove new line caracter
-    document.getElementById("resultOfFunction").innerHTML = resultHexEncoded;
+    return resultHexEncoded;
+    // document.getElementById("resultOfFunction").innerHTML = resultHexEncoded;
+}
+function encryptHTML(){
+    NormalCode = '';
+    NormalHTMLCode = document.getElementById("htmlCode").value;
+    let kk = document.getElementById("keyNumber").value;
+    kk++;
+    for ( let j=0 ; j<kk ; j++ ) {
+        NormalHTMLCode = basicEncriptionHTML(NormalHTMLCode);
+    }
+    document.getElementById("resultOfFunction").innerHTML = NormalHTMLCode;
 }
 
-function decryptHTML(){
-    NormalCode = '';
-    NormalCode = document.getElementById("htmlCode").value;
+function basicDecryptHTML(){
+    // NormalCode = '';
+    // NormalCode = document.getElementById("htmlCode").value;
     NormalCode = NormalCode.replace('<script language="javascript">document.write(unescape(\'','');
     NormalCode = NormalCode.replace('\'));</script>','');
 
     resultHexEncoded = unescape(NormalCode);  
-    document.getElementById("resultOfFunction").innerHTML = resultHexEncoded;
+    return resultHexEncoded;
+    // document.getElementById("resultOfFunction").innerHTML = resultHexEncoded;
+}
+function decryptHTML(){
+    NormalCode = '';
+    NormalCode = document.getElementById("htmlCode").value;
+    let mm = document.getElementById("keyNumber").value;
+    mm++;
+    for (let r=0 ; r<mm ; r++){
+        NormalCode = basicDecryptHTML(NormalCode);
+    }
+    document.getElementById("resultOfFunction").innerHTML = NormalCode;
 }
 
 function fetchEncriptFunction(){
