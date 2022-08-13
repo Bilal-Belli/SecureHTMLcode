@@ -71,3 +71,5 @@ function fetchDecriptFunction(){
     output += `<textarea class="form-control" id="resultOfFunction" readonly rows="6"></textarea>`;
     document.querySelector('.form-outline.form-white.secondOPdiv').innerHTML = output;
 }
+
+// you can add as a key for encryption in a comment, and for decryption it must be the same:else it return some erreurs
