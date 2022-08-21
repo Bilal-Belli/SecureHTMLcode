@@ -9,8 +9,8 @@
 </div>
 <h3 align="left">View:</h3>
 <div align="center">
-   <p align="center">![alt text](https://github.com/Bilal-Belli/SecureHTMLcode/blob/main/1.png?raw=true)"</p>
-   <p align="center">![alt text](https://github.com/Bilal-Belli/SecureHTMLcode/blob/main/2.png?raw=true)"</p>
+   <p align="center"><img width="836" alt="1" src="https://user-images.githubusercontent.com/74218805/185803619-326a418d-05fb-4988-8b0c-ea450f76d018.PNG"></p>
+   <p align="center"><img width="828" alt="2" src="https://user-images.githubusercontent.com/74218805/185803630-257cd7a4-b523-4605-b249-c91f85265611.PNG"></p>
 </div>
 <h3 align="left">Live Essay:</h3>
 <div align="center">
