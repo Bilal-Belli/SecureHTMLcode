@@ -5,8 +5,8 @@
 <h3 align="left">Algorithme:</h3>
 <div align="center">
    <p align="center">This is how it works:</p>
-   <p align="center"><img width="836" alt="1" src="https://user-images.githubusercontent.com/74218805/185804024-42bf15a7-8d4f-475b-8f8b-33cd50f4f95c.png"></p>
-   <p align="center"><img width="836" alt="1" src="https://user-images.githubusercontent.com/74218805/185804002-c2e0fb48-81d8-4433-9855-e49440ed9a29.png"></p>
+   <p align="center"><img width="300" alt="1" src="https://user-images.githubusercontent.com/74218805/185804024-42bf15a7-8d4f-475b-8f8b-33cd50f4f95c.png"></p>
+   <p align="center"><img width="300" alt="1" src="https://user-images.githubusercontent.com/74218805/185804002-c2e0fb48-81d8-4433-9855-e49440ed9a29.png"></p>
 </div>
 <h3 align="left">View:</h3>
 <div align="center">
